@@ -1,0 +1,59 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'PreToolUse executed' >> ~/.claude/hooks.log"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'PostToolUse executed' >> ~/.claude/hooks.log"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Notification executed' >> ~/.claude/hooks.log && bash .claude/scripts/notify.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Stop executed' >> ~/.claude/hooks.log && bash .claude/scripts/assistant-say.sh"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'UserPromptSubmit executed' >> ~/.claude/hooks.log && bash .claude/scripts/user-say.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
