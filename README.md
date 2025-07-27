@@ -10,8 +10,9 @@ Add TTS functionality to your Claude Code development sessions with automatic vo
 
 ## Demo
 
-![Demo Video(en)](./assets/video/demo-en.mp4)
-![Demo Video(kr)](./assets/video/demo-kr.mp4)
+https://github.com/user-attachments/assets/992d794d-ef4b-40c5-9a75-7a955ebd8aee
+
+https://github.com/user-attachments/assets/492744b0-5ace-43f3-ab7c-be56bb725b21
 
 ## Prerequisites
 
