@@ -1,13 +1,17 @@
 # Claude Code Voice Integration
 
-Add text-to-speech functionality to your Claude Code development sessions with automatic voice feedback and multilingual support.
+Add TTS functionality to your Claude Code development sessions with automatic voice feedback and EN/KO support.
 
 ## Features
 
 - **Automatic Voice Feedback**: Hear Claude Code's responses spoken aloud when tasks complete
-- **User Input Echo**: Optional voice repetition of your prompts for accessibility
-- **Multilingual Support**: Automatically detects Korean text and uses appropriate voices
+- **EN/KO Support**: Automatically detects Korean text and uses appropriate voices
 - **Non-intrusive Logging**: All hook activity is logged for debugging
+
+## Demo
+
+![Demo Video(en)](./assets/video/demo-en.mp4)
+![Demo Video(kr)](./assets/video/demo-kr.mp4)
 
 ## Prerequisites
 
@@ -42,11 +46,8 @@ Once installed, the voice integration will automatically activate when using Cla
 ### Voice Behavior
 
 - **Assistant responses**: When Claude Code completes a task, the response is spoken using:
-
-  - "Daniel" voice for English and other languages
-  - "Yuna" voice for Korean text (automatically detected)
-
-- **User prompts**: Your submitted prompts are echoed back via voice
+  - "Daniel" voice for English
+  - "Yuna" voice for Korean (automatically detected)
 
 ### Customization
 
@@ -78,3 +79,7 @@ This is a simple shell script-based project. To contribute:
 1. Test changes with your Claude Code setup
 2. Ensure scripts remain compatible with the hook system
 3. Add appropriate error handling for edge cases
+
+## References
+
+- https://docs.anthropic.com/en/docs/claude-code/hooks
